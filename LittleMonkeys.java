@@ -14,8 +14,9 @@ public class LittleMonkeys {
         }
         else
             System.out.println("\"No little monkeys jumping on the bed!\"");
-    
-        switch(monkeyCount > 0 && isJumping == 1 ? monkeyCount : 0) {
+        
+        int numMonkeys = 0;
+        /*switch(monkeyCount > 0 && isJumping == 1 ? monkeyCount : 0) {
             case 4:
                 System.out.println("\"Four little monkeys jumping on the bed!\"");
                 break;
@@ -30,7 +31,14 @@ public class LittleMonkeys {
                 break;
             default:
                 System.out.println("\"No more monkeys jumping on the bed!\"");
+        }*/
+
+        switch(monkeyCount > 0 && isJumping == 1 ? monkeyCount : 0) {
+            case 4, 3, 2, 1 -> numMonkeys = monkeyCount;          
+            default -> numMonkeys = 0;
         }
+          System.out.println(numMonkeys + " little monkeys jumping on the bed!");
+                
     }   
  
 }
