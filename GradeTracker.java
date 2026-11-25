@@ -9,6 +9,10 @@ class Student
 
 public class GradeTracker {
     public static void main(String a[]) {
+               
+    
+
+       
         Student s1 = new Student();
         s1.student = "Alice";
         s1.age = 16;
@@ -32,12 +36,12 @@ public class GradeTracker {
         s3.scores[0] = 98;
         s3.scores[1] = 95;
         s3.scores[2] = 100;
-    
+
         Student[] students = {s1, s2, s3};
-        for (Student stud : students)
-        {
-            System.out.println("Student: " + stud.student + ", Age: " + stud.age + ", Scores: " + Arrays.toString(stud.scores));
-        }
+        for (Student stud : students) {
+    String upperName = stud.student.toUpperCase();
+    System.out.println("Student: " + upperName + ", Age: " + stud.age + ", Scores: " + Arrays.toString(stud.scores));
+}
 
         
     }
